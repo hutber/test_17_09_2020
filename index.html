@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <script>document.documentElement.removeAttribute('class') //for simplicity of the test</script>
+        <link rel="stylesheet" type="text/css" href="./index.css" />
+    <head>
+<body>
+    <main>
+        <h1 data-testid="header">Who lives with you?</h1>
+        <h2 data-testid="subheader">New person details</h2>
+        <form data-testid="form">
+            <label for="name">Name</label>
+            <input id="name" name="name" />
+            <label for="dob">Date of Birth</label>
+            <input id="dob" name="dob" />
+            <div class="hidden_action" data-testid="hidden_action">Could we improve this page?</div>
+            <div class="hidden_field" data-testid="hidden_field">
+                <label for="feedback" class="tight_label">Add Feedback</label>
+                <textarea name="feedback" id="feedback" cols="30" rows="3"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <script src="./index.js" type="text/javascript"></script>
+</body>
+</html>

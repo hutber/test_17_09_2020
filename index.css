@@ -1,0 +1,68 @@
+body {
+    font-family: 'sans-serif';
+}
+
+/*
+* Form Elements
+*/
+h1 {
+    font-size: 26px;
+}
+
+form * {
+    display: block;
+    margin-bottom: 7px;
+}
+
+form input {
+    margin-bottom: 20px;
+}
+
+button {
+    border-radius: 4px;
+    border: none;
+    background: #28801d;
+    color: #FFF;
+    padding: 6px 10px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+button:active {
+    background: #185011;
+}
+
+.tight_label {
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+/*
+* Hidden Elements
+*/
+.hidden_action {
+    color: #28187d;
+    font-size: 19px;
+    border-bottom: 1px solid #06122b;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+}
+
+.hidden_action::before {
+    content: '\025B8';
+    padding-right: 10px;
+}
+
+
+.no-js .hidden_action::before, .hidden_action.triggered::before {
+    content: '\025BE';
+}
+
+.hidden_field {
+    display: none;
+}
+
+.no-js .hidden_field, .hidden_field.triggered {
+    display: block;
+}
